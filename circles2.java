@@ -1,4 +1,5 @@
 //// Wild circles #2.
+
 String title=  "Click for another circle.";
 String subtitle=  "Press any key to erase.";
 String author=  "Bruce Alan Martin";
@@ -18,6 +19,7 @@ void setup() {
 
 // Next frame. //
 void draw() {
+  text( " Majin", 70, 160);
   text( title, 10, 10 );
   text( subtitle, width/2, 10 );
   text( author, 10, height-10 );
@@ -41,4 +43,5 @@ void keyPressed() {
   fill( random(255), random(255), random(255) );
   w=  int( random(50,150) );
   h=  int( random(50,150) );
+
 }
